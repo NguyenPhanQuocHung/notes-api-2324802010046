@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Báo cáo Bài 1 - Điện toán đám mây</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; color: #333; }
+    h1, h2 { color: #0366d6; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-spacing: left; }
+    th { background-color: #f6f8fa; }
+    ul { background-color: #f8f9fa; padding: 15px 30px; border-radius: 5px; }
+    li { margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Báo cáo thực hành Bài 1: Hello Cloud API</h1>
+  <p><strong>Sinh viên:</strong> Nguyễn Phan Quốc Hưng - <strong>MSSV:</strong> 2324802010046</p>
+
+  <h2>1. Bảng so sánh Máy cá nhân và GitHub Codespace</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Tiêu chí</th>
+        <th>Máy cá nhân</th>
+        <th>Codespace</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Thời gian từ lúc bắt đầu đến khi chạy được <code>node -v</code></td>
+        <td>~ 15 - 30 phút (tải installer, cài đặt, cấu hình PATH)</td>
+        <td>~ 10 - 20 giây (tự động có sẵn Node.js qua devcontainer)</td>
+      </tr>
+      <tr>
+        <td>Số CPU, RAM (từ API)</td>
+        <td>Tùy máy (Ví dụ: 8 CPUs, 16.0 GB)</td>
+        <td>2 CPUs, 8.0 GB (Standard 2-core codespace)</td>
+      </tr>
+      <tr>
+        <td>Hệ điều hành</td>
+        <td>Windows 11 / macOS</td>
+        <td>Linux (Linux 6.x / Ubuntu container)</td>
+      </tr>
+      <tr>
+        <td>Cách truy cập từ thiết bị khác</td>
+        <td>Phức tạp (Cần mở Port Router, NAT, hoặc cài ngrok / Cloudflare Tunnel)</td>
+        <td>Dễ dàng (Đổi Port Visibility sang Public → Mở URL *.app.github.dev)</td>
+      </tr>
+      <tr>
+        <td>Chi phí, đo bằng gì</td>
+        <td>Tiền điện, khấu hao phần cứng (đo bằng kWh, VNĐ)</td>
+        <td>Tính theo thời gian sử dụng thực tế (đo bằng Core-hours và GB-Month trong GitHub Billing)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>2. Ghép 5 đặc tính NIST với trải nghiệm thực tế</h2>
+  <ul>
+    <li><strong>Tự phục vụ theo yêu cầu (On-demand self-service):</strong> Nhấp chuột vào <em>"Create codespace on main"</em> để khởi tạo ngay lập tức môi trường máy ảo đầy đủ mà không cần thông qua sự phê duyệt hay can thiệp thủ công từ quản trị viên.</li>
+    <li><strong>Truy cập mạng rộng (Broad network access):</strong> Truy cập và thao tác trên IDE Web Codespace qua trình duyệt máy tính, đồng thời test API cổng 3000 công khai trực tiếp từ trình duyệt trên điện thoại thông minh qua mạng 4G/Wi-Fi.</li>
+    <li><strong>Gộp tài nguyên (Resource pooling):</strong> Máy ảo Codespace được cấp phát linh hoạt từ hạ tầng đám mây dùng chung của GitHub/Azure, chạy trên các máy chủ vật lý phục vụ đồng thời nhiều người dùng khác nhau.</li>
+    <li><strong>Co giãn nhanh (Rapid elasticity):</strong> Dễ dàng thay đổi cấu hình máy ảo (ví dụ: nâng từ 2-core lên 4-core hoặc 8-core) hoặc mở/tắt Codespace nhanh chóng tùy theo nhu cầu tải công việc.</li>
+    <li><strong>Dịch vụ đo lường được (Measured service):</strong> Hệ thống ghi nhận chính xác dung lượng lưu trữ (GB) và số giờ máy hoạt động (Core-hours) hiển thị chi tiết trong trang <em>Settings &rarr; Billing &rarr; Usage</em> của tài khoản GitHub.</li>
+  </ul>
+</body>
+</html>
